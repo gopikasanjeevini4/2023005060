@@ -76,16 +76,16 @@ Built with React + Vite, styled with Material UI.
 
 #### Backend — Health Check (`localhost:3000`)
 
-![Backend Health Check](./screenshots/Screenshot%202026-06-07%20132323.png)
+![Backend Health Check](https://raw.githubusercontent.com/gopikasanjeevini4/2023005060/main/screenshot/Screenshot%202026-06-07%20132323.png)
 
 #### Backend — All Notifications (`localhost:3000/notifications`)
 
-![All Notifications API](./screenshots/Screenshot%202026-06-07%20132328.png)
+![All Notifications API](https://raw.githubusercontent.com/gopikasanjeevini4/2023005060/main/screenshot/Screenshot%202026-06-07%20132328.png)
 
 #### Backend — Priority Notifications (`localhost:3000/notifications/priority`)
 
-![Priority Notifications API](./screenshots/Screenshot%202026-06-07%20132333.png)
+![Priority Notifications API](https://raw.githubusercontent.com/gopikasanjeevini4/2023005060/main/screenshot/Screenshot%202026-06-07%20132333.png)
 
 #### Frontend — Campus Notification System UI (`localhost:5173`)
 
-![Frontend UI](./screenshots/Screenshot%202026-06-07%20132232.png)
+![Frontend UI](https://raw.githubusercontent.com/gopikasanjeevini4/2023005060/main/screenshot/Screenshot%202026-06-07%20132232.png)
