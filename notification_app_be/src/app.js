@@ -1,29 +1,56 @@
-require("dotenv").config();
-const Log = require("../../logging_middleware/logger");
 const express = require("express");
 const cors = require("cors");
-
-const notificationRoutes = require("./routes/notificationRoutes");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/", async (req, res) => {
-  await Log(
-    "backend",
-    "info",
-    "route",
-    "Home route accessed"
-  );
-
+// Home Route
+app.get("/", (req, res) => {
   res.json({
     message: "Notification Backend Running"
   });
 });
 
-app.use("/notifications", notificationRoutes);
+// Notifications Route
+app.get("/notifications", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      type: "Placement",
+      message: "Microsoft Hiring"
+    },
+    {
+      id: 2,
+      type: "Result",
+      message: "Semester Results Released"
+    },
+    {
+      id: 3,
+      type: "Event",
+      message: "Tech Fest"
+    }
+  ]);
+});
+
+// Priority Notifications Route
+app.get("/notifications/priority", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      type: "Placement",
+      message: "Microsoft Hiring",
+      priority: 3
+    },
+    {
+      id: 2,
+      type: "Result",
+      message: "Semester Results Released",
+      priority: 2
+    }
+  ]);
+});
 
 const PORT = 3000;
 
