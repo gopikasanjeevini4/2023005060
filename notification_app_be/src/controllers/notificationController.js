@@ -1,4 +1,13 @@
-exports.getNotifications = (req, res) => {
+const Log = require("../../../logging_middleware/logger");
+
+exports.getNotifications = async (req, res) => {
+  await Log(
+    "backend",
+    "info",
+    "controller",
+    "Fetching notifications"
+  );
+
   res.json([
     {
       id: 1,

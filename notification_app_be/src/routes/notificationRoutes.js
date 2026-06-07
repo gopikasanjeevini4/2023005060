@@ -1,7 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const notificationController = require("../controllers/notificationController");
 
-router.get("/", notificationController.getNotifications);
+const {
+  getNotifications,
+  getPriorityNotifications
+} = require("../controllers/notificationController");
+
+router.get("/", getNotifications);
+
+router.get("/priority", getPriorityNotifications);
 
 module.exports = router;
